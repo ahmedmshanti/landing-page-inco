@@ -1,0 +1,344 @@
+.container {
+  width: 1200px;
+}
+
+.icon-color {
+  display: flex;
+  background-color: #ddd;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(100%);
+  transition-duration: 0.7s;
+  padding:  3px;
+  gap: 5px;
+  z-index: 999;
+}
+.icon-color span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.icon-color :nth-child(1) {
+  background-color: gray;
+}
+.icon-color :nth-child(2) {
+  background-color: #EFA3C8;
+}
+.icon-color :nth-child(3) {
+  background-color: #8DCBE6;
+}
+
+.icon-color button {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+
+}
+.icon-color button i{
+ 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.showIcon {
+  transform: translateY(-50%) translateX(0);
+}
+
+@media (max-width: 768px) {
+
+  .container{
+    width: 100%;
+  }
+
+   .container .content-user{
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+ .container .content-user .user{
+  width: calc(100% / 2);
+
+ }
+
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+  nav {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+  }
+
+  nav .container {
+    position: relative;
+  }
+  nav .container .toggle {
+    display: block;
+    cursor: pointer;
+    border: none;
+    background-color: #f1f1f1;
+  }
+  .menu{
+    display: none;
+  }
+  .menu li {
+    padding: 20px 0;
+  }
+  .show {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+
+  #news .container .cards .card-people{
+    width: auto;
+    margin-top: 20px;
+  }
+  /*  */
+
+  .container .title-creative p {
+    padding: 10px 0;
+  }
+
+  #creative .container .content-creative {
+    display: block;
+    padding: 20px 0;
+  }
+  #creative .container .content-creative .details-creative {
+    width: 100%;
+  }
+  /*  */
+  #creative .container .content-container {
+    display: block;
+  }
+  #creative .container .content-container img {
+    width: 100%;
+  }
+  #creative .container .content-container .details-content {
+    width: 100%;
+  }
+  /*  */
+  #contact .container .cards {
+    display: block;
+  }
+  #contact .container .cards .card-people {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /*  */
+  #works {
+    width: 100%;
+  }
+  #works .container .content-works .details-works {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #works .container .content-works .details-works img {
+    width: 200px;
+    padding: 20px 0;
+  }
+  #works .container .content-works .details-works .details {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #footer .container .content-footer .info-compony {
+    width: 100%;
+  }
+
+  /*  */
+  #people .container .cards {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #people .container .cards .card-people {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /*  */
+
+  .trade .container .trade-mark{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #footer .container{
+    padding: 20px;
+  }
+  .icon{
+    display: block;
+  }
+ #footer .container .content-footer {
+  
+  display: block;
+  margin: auto;
+ }
+ #footer .container .info-compony{
+  display: block;
+  width: 100%;
+ }
+ #footer .container .info-compony .content-compony{
+  width: 100%;
+ }
+ 
+ #footer .container .info-compony3{
+  display: block;
+  width: 100%;
+
+ }
+ #footer .container .content-footer .info-compony2 > ul  {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+ }
+ #footer .container .content-footer .info-compony2 > ul li {
+  width: 100%;
+
+  
+ }
+ #footer .container .content-footer .info-compony3  {
+  width: 100%;
+ 
+ }
+ #footer .container .content-footer .info-compony2 .list-footer{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+ }
+
+
+ #works .container .content-works{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ #works .container .content-works .col{
+  display: flex;
+  flex-direction:column-reverse ;
+  
+
+}
+
+
+
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+  
+  #works .container .content-works .details-works .details {
+    flex-wrap: wrap;
+  }
+  #works .container .content-works {
+    display: flex;
+    flex-direction:column-reverse ;
+  }
+  
+  nav {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    background-color: aqua;
+  }
+  
+  nav .container ul li {
+    width: 100%;
+  }
+  nav .container .toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+  }
+  /*  */
+  #creative .container .content-creative {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  #creative .container .content-creative .details-creative {
+    width: 100%;
+    padding: 20px;
+  }
+  /*  */
+  #creative .container .content-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #creative .container .content-container img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #creative .container .content-container .details-content {
+    width: 90%;
+    margin-top: 10px;
+  }
+  #works .container {
+    width: 100%;
+  }
+  #works .container .content-works .details-works .details {
+    margin-top: 20px;
+  }
+  /*  */
+ 
+  .container .content-user{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+   }
+  
+  footer .container .content-footer {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+  }
+  footer .container .content-footer .info-compony,
+  .info-compony3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    display: block;
+  }
+ 
+  footer .container .content-footer .info-compony2 {
+    width: 100%;
+  }
+  
+
+  #footer .container .info-compony2 .list-footer ul{
+    display: block;
+    width: 100%;
+  }
+}
